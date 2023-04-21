@@ -1,13 +1,13 @@
 import React from "react";
 
 function Card(props) {
-  const { data } = props;
+   
   return (
     <div className="container-fluid" style={{ marginTop: "13px" }}>
       <div className="card shadow">
         <div className="row no-gutters">
           <div className="col-xl-auto border-right sub-card">
-            <h5>{data.title}</h5>
+            <h5>{props.title}</h5>
           </div>
           <div className="col-xl-auto">
             <div className="row">
@@ -17,7 +17,7 @@ function Card(props) {
             </div>
             <div className="row">
               <div className="col">
-                <p>{data.curriculamName}</p>
+                <p>{props.curriculamName}</p>
               </div>
             </div>
           </div>
@@ -29,7 +29,7 @@ function Card(props) {
             </div>
             <div className="row">
               <div className="col">
-                <p>{data.combo}</p>
+                <p>{props.combo}</p>
               </div>
             </div>
           </div>
@@ -41,7 +41,7 @@ function Card(props) {
             </div>
             <div className="row">
               <div className="col">
-                <p>{data.streamName}</p>
+                <p>{props.streamName}</p>
               </div>
             </div>
           </div>
@@ -53,7 +53,7 @@ function Card(props) {
             </div>
             <div className="row">
               <div className="col">
-                <p>{data.intakeName}</p>
+                <p>{props.intakeName}</p>
               </div>
             </div>
           </div>
@@ -65,7 +65,7 @@ function Card(props) {
             </div>
             <div className="row">
               <div className="col">
-                <p>{data.resultReleased}</p>
+                <p>{props.resultReleased}</p>
               </div>
             </div>
           </div>
@@ -77,7 +77,7 @@ function Card(props) {
             </div>
             <div className="row">
               <div className="col">
-                <p>{data.releaseDate}</p>
+                <p>{props.releaseDate}</p>
               </div>
             </div>
           </div>
@@ -89,7 +89,7 @@ function Card(props) {
             </div>
             <div className="row">
               <div className="col" style={{ textDecoration: "underline" }}>
-                <p>{data.studentCount}</p>
+                <p>{props.studentCount}</p>
               </div>
             </div>
           </div>
