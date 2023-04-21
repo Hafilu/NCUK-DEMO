@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Card from "./components/Card";
+import IconBar from "./components/IconBar";
+import Searchbar from "./components/SearchBar";
+
+import Topbar from "./components/Topbar";
 
 function App() {
+  const cardsData = [
+    {
+      title: "CS Centre",
+      curriculamName: "CS Curriculam",
+      combo: "CS Combo",
+      streamName: "",
+      intakeName: "CS INTAKE 1",
+      resultReleased: "Yes",
+      releaseDate: "N/A",
+      studentCount: "5",
+    },
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-card">
+      <Topbar />
+      <Searchbar />
+      <IconBar />
+      {cardsData.map((cardData, index) => (
+        <Card key={index} data={cardData} />
+      ))}
+      {cardsData.map((cardData, index) => (
+        <Card key={index} data={cardData} />
+      ))}
+      {cardsData.map((cardData, index) => (
+        <Card key={index} data={cardData} />
+      ))}
     </div>
   );
 }
