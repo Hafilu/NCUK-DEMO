@@ -2,14 +2,13 @@ import "./App.css";
 import Card from "./components/Card";
 import IconBar from "./components/IconBar";
 import Searchbar from "./components/SearchBar";
-
 import Topbar from "./components/Topbar";
 
 function App() {
   const cardsData = [
     {
       title: "CS Centre",
-      curriculamName: "CS Curriculam",
+      curriculamName: "CS Curriculum",
       combo: "CS Combo",
       streamName: "",
       intakeName: "CS INTAKE 1",
