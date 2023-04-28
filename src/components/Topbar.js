@@ -4,11 +4,11 @@ function Topbar() {
   return (
     <div className="container-fluid right">
       <h3>RESULTS</h3>
-      <div>
+      <div className="top-buttons">
         <button
           type="button"
-          className="btn btn-outline-danger"
-          style={{ marginRight: "8px" }}
+          className="btn btn-outline-danger top-button"
+          style={{ marginRight: "8px"}}
         >
           <i className="bi bi-cloud-arrow-up-fill"></i>
           <svg
@@ -23,7 +23,7 @@ function Topbar() {
           </svg>
           BULK UPLOAD
         </button>
-        <button type="button" className="btn btn-outline-dark">
+        <button type="button" className="btn btn-outline-dark top-button">
           <i className="bi bi-arrow-return-left"></i>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ function Topbar() {
               d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"
             />
           </svg>
-          BACK TO DASHBOARD
+           BACK TO DASHBOARD
         </button>
       </div>
     </div>

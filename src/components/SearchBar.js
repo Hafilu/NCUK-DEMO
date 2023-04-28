@@ -3,6 +3,7 @@ import React from "react";
 function Searchbar() {
   return (
     <div className="container-fluid d-flex">
+    <div className="container-fluid d-flex p-0">
       <div className="square">
         <i className="fa-solid fa-filter" style={{ color: "#1c222b" }}></i>
       </div>
@@ -19,7 +20,8 @@ function Searchbar() {
           <i className="fa-solid fa-magnifying-glass"></i>
         </span>
       </div>
-      <div className="dropdown" style={{ marginLeft: "220px" }}>
+      </div>
+      <div className="dropdown" style={{ marginLeft: "0px" }}>
         <button
           className="btn btn-outline-dark dropdown-toggle"
           type="button"
@@ -46,7 +48,8 @@ function Searchbar() {
           </li>
         </ul>
       </div>
-    </div>
+      </div>
+   
   );
 }
 
